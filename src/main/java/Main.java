@@ -34,20 +34,33 @@ public class Main {
         list.add(19,20);
         list.add(20,21);
         list.add(21,22);
+        list.remove(10);
 
         for(int i=0; i<list.size();i++){
             System.out.println(list.get(i));
         }
         System.out.println("Size: "+list.size());
 
-        /*
+        System.out.println("Is contain: "+ list.contains(40));
+
+
+/*
         List mylist = new ArrayList();
         mylist.add(4);
-        mylist.add(0, 5);
+        mylist.add(4);
+        mylist.add(4);
+        mylist.add(2);
 
         mylist.forEach(System.out::println);
 
-         */
+
+        mylist.forEach(System.out::println);
+
+ */
+
+
+
+
 
 
     }

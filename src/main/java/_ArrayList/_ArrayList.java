@@ -50,6 +50,7 @@ public class _ArrayList {
         }
     }
 
+
     public int size(){
         return counter;
     }
@@ -57,6 +58,33 @@ public class _ArrayList {
 
     public int get(int index){
         return arr[index];
+    }
+
+    // REMOVE
+    public int remove(int index){
+        if(index<counter){
+            int temp = arr[index];
+            if(index == counter){
+                counter--;
+                return temp;
+            }else{
+                arr = rotateToLeft(index,arr);
+                counter--;
+                return temp;
+            }
+        }else{
+            throw new IndexOutOfBoundsException("Index out of bount ex");
+        }
+    }
+
+    // CONTAINS
+    public boolean contains(int value){
+        for(int i=0; i<counter;i++){
+            if(arr[i]== value){
+                return true;
+            }
+        }
+        return false;
     }
 
     //**********************************************
@@ -76,6 +104,17 @@ public class _ArrayList {
         }
         for(int i = index; i<counter;i++){
             temp[i+1]=arr[i];
+        }
+        return temp;
+    }
+
+    private int[] rotateToLeft(int index, int[] arr){
+        int[] temp = new int[size];
+        for(int i=0; i< index;i++){
+            temp[i]=arr[i];
+        }
+        for(int i = index; i<counter;i++){
+            temp[i]=arr[i+1];
         }
         return temp;
     }
