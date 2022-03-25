@@ -1,5 +1,8 @@
 import _ArrayList._ArrayList;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,9 +22,32 @@ public class Main {
         list.add(11);
         list.add(12);
 
+        System.out.println("Size: "+list.size());
+
+        list.add(12,13);
+        list.add(13,14);
+        list.add(14,15);
+        list.add(15,16);
+        list.add(16,17);
+        list.add(17,18);
+        list.add(18,19);
+        list.add(19,20);
+        list.add(20,21);
+        list.add(21,22);
+
         for(int i=0; i<list.size();i++){
             System.out.println(list.get(i));
         }
+        System.out.println("Size: "+list.size());
+
+        /*
+        List mylist = new ArrayList();
+        mylist.add(4);
+        mylist.add(0, 5);
+
+        mylist.forEach(System.out::println);
+
+         */
 
 
     }
