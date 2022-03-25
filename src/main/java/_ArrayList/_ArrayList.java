@@ -1,25 +1,26 @@
 package _ArrayList;
 
-public class _ArrayList {
+public class _ArrayList<E> {
 
     // ArrayList implemented from array
 
-    private int[] arr;
+
+    private Object[] arr;
     private int size;
     private int counter;
 
     public _ArrayList(){
         this.size = 10;
-        this.arr = new int[size];
+        this.arr = new Object[size];
         this.counter = 0;
     }
-    public _ArrayList(int size){
+    public  _ArrayList(int size){
         this.size = size;
         this.counter = 0;
     }
 
     // ADD to the end of the list
-    public void add(int value){
+    public void add(E value){
         if(counter < size){
             arr[counter]= value;
             counter++;
@@ -31,7 +32,7 @@ public class _ArrayList {
     }
 
     // ADD to the index position
-    public void add(int index, int value){
+    public void add(int index, E value){
         if(counter < size){
             if(index == counter){
                 arr[index]= value;
@@ -56,14 +57,14 @@ public class _ArrayList {
     }
 
 
-    public int get(int index){
+    public Object get(int index){
         return arr[index];
     }
 
-    // REMOVE
-    public int remove(int index){
+    // REMOVE by index
+    public Object remove(int index){
         if(index<counter){
-            int temp = arr[index];
+            Object temp = arr[index];
             if(index == counter){
                 counter--;
                 return temp;
@@ -77,8 +78,26 @@ public class _ArrayList {
         }
     }
 
+    // REMOVE by object
+    public boolean remove(E object){
+        for(int i=0; i<counter;i++){
+            if(arr[i].equals(object)){
+                Object temp = arr[i];
+                if(i == counter){
+                    counter--;
+                    return true;
+                }else{
+                    arr = rotateToLeft(i,arr);
+                    counter--;
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     // CONTAINS
-    public boolean contains(int value){
+    public boolean contains(E value){
         for(int i=0; i<counter;i++){
             if(arr[i]== value){
                 return true;
@@ -88,17 +107,17 @@ public class _ArrayList {
     }
 
     //**********************************************
-    private int[] increaseArray(int[] arr){
+    private Object[] increaseArray(Object[] arr){
         this.size = size*2;
-        int[] temp = new int[size];
+        Object[] temp = new Object[size];
         for(int i=0; i<arr.length;i++){
             temp[i]=arr[i];
         }
         return temp;
     }
 
-    private int[] rotateToRight(int index, int[] arr){
-        int[] temp = new int[size];
+    private Object[] rotateToRight(int index, Object[] arr){
+        Object[] temp = new Object[size];
         for(int i=0; i< index;i++){
             temp[i]=arr[i];
         }
@@ -108,8 +127,8 @@ public class _ArrayList {
         return temp;
     }
 
-    private int[] rotateToLeft(int index, int[] arr){
-        int[] temp = new int[size];
+    private Object[] rotateToLeft(int index, Object[] arr){
+        Object[] temp = new Object[size];
         for(int i=0; i< index;i++){
             temp[i]=arr[i];
         }

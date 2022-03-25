@@ -34,14 +34,28 @@ public class Main {
         list.add(19,20);
         list.add(20,21);
         list.add(21,22);
-        list.remove(10);
+
+        System.out.println("Remove this: "+list.remove(10));
 
         for(int i=0; i<list.size();i++){
             System.out.println(list.get(i));
         }
         System.out.println("Size: "+list.size());
 
-        System.out.println("Is contain: "+ list.contains(40));
+        System.out.println("Is contain: "+ list.contains(10));
+
+        _ArrayList<String> wordList = new _ArrayList<String>();
+
+        wordList.add("word");
+        System.out.println("Is contain: "+ wordList.contains("word"));
+       // System.out.println("Remove a string: "+wordList.remove(0));
+        System.out.println("Delete word: "+wordList.remove("word"));
+        System.out.println("Is contain: "+ wordList.contains("word"));
+
+        List<String> mylist = new ArrayList<>();
+       // myList.re
+
+        //mylist.add(4)
 
 
 /*
@@ -57,6 +71,8 @@ public class Main {
         mylist.forEach(System.out::println);
 
  */
+
+
 
 
 
