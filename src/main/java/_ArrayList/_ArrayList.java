@@ -1,6 +1,6 @@
 package _ArrayList;
 
-public class _ArrayList<E> {
+public class _ArrayList<E extends Object> {
 
     // ArrayList implemented from array
 

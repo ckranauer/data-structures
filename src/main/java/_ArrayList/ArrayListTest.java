@@ -1,11 +1,10 @@
-import _ArrayList._ArrayList;
+package _ArrayList;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Main {
+public class ArrayListTest {
 
     public static void main(String[] args) {
+
+
 
         _ArrayList list = new _ArrayList();
 
@@ -48,34 +47,9 @@ public class Main {
 
         wordList.add("word");
         System.out.println("Is contain: "+ wordList.contains("word"));
-       // System.out.println("Remove a string: "+wordList.remove(0));
+        // System.out.println("Remove a string: "+wordList.remove(0));
         System.out.println("Delete word: "+wordList.remove("word"));
         System.out.println("Is contain: "+ wordList.contains("word"));
-
-        List<String> mylist = new ArrayList<>();
-       // myList.re
-
-        //mylist.add(4)
-
-
-/*
-        List mylist = new ArrayList();
-        mylist.add(4);
-        mylist.add(4);
-        mylist.add(4);
-        mylist.add(2);
-
-        mylist.forEach(System.out::println);
-
-
-        mylist.forEach(System.out::println);
-
- */
-
-
-
-
-
 
 
 
