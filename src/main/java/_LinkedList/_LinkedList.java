@@ -9,8 +9,8 @@ public class _LinkedList<E extends Object> {
         size=0;
     }
 
-    // ADD to the tail
-    public boolean add(E value){
+    // ADD to the tail // addLast
+    public boolean addLast(E value){
         if(head != null){
             if(head.hasNext()){
                 Node next = head.getNext();
@@ -34,6 +34,20 @@ public class _LinkedList<E extends Object> {
 
 
     // ADD to the head
+    public void addFirst(E value){
+        if(head == null){
+            head = new Node<E>(value);
+            size++;
+        }else{
+            Node temp = new Node<E>(head.getValue());
+            temp.setNext(head.getNext());
+            head = new Node<E>(value);
+            head.setNext(temp);
+            size++;
+        }
+    }
+
+
 
     // ADD to the index position add(int index, E value)
     public void add(int index, E value){

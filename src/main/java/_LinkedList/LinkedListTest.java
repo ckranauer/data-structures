@@ -9,28 +9,34 @@ public class LinkedListTest {
 
         _LinkedList<String> list = new _LinkedList<String>();
 
-        list.add("first");
-        list.add("second");
-        list.add("third");
+        list.addLast("first");
+        list.addLast("second");
+        list.addLast("third");
 
 
 
-       //List<String> mylist = new LinkedList<>();
+       //LinkedList<String> mylist = new LinkedList<>();
         //mylist.add("asd");
+        //mylist.
+
         //System.out.println(mylist.get(0));
 
-        System.out.println("Size of the list: "+list.size());
-        list.add(1,"LOL");
+        //System.out.println("Size of the list: "+list.size());
+        //list.add(1,"LOL");
+        list.addFirst("Hi");
+        list.addLast("Good");
+        list.addLast("Bye");
         print(list,0);
         print(list,1);
         print(list,2);
         print(list,3);
-        System.out.println("Size of the list: "+list.size());
-        System.out.println("Element is removed: "+list.remove("second"));
-        print(list,0);
-        print(list,1);
-        print(list,2);
-        System.out.println("Size of the list: "+list.size());
+        print(list,4);
+        print(list,5);
+        //System.out.println("Size of the list: "+list.size());
+        //System.out.println("Element is removed: "+list.remove("second"));
+        //print(list,0);
+        //print(list,1);
+       ////System.out.println("Size of the list: "+list.size());
 
 
 
