@@ -73,7 +73,89 @@ public class _LinkedList<E extends Object> {
 
     // REMOVE from the tail
 
+    // REMOVE from index
+    public E remove(int index){
+        if(index>size){
+            throw new IndexOutOfBoundsException("Index out of bounds ex");
+        }
+        if(index == 0){
+            if(head.hasNext()){
+                Node temp = head.getNext();
+                E value = head.getValue();
+                head = temp;
+                size--;
+                return value;
+            }
+            E value = head.getValue();
+            head.setValue(null);
+            size--;
+            return value;
+        }
+        int i = 0;
+        Node next = head;
+        while(i!=index){
+            next = next.getNext();
+            i++;
+        }
+        E value = (E) next.getValue();
+        Node temp = next.getNext();
+        i = 0;
+        next = head;
+        while(i!=index-1){
+            next = next.getNext();
+            i++;
+        }
+        next.setNext(temp);
+        size--;
+        return value;
+    }
+
+    // REMOVE Object o  return boolean
+    public boolean remove(E value){
+        if(size==0){
+            return false;
+        }
+        if(head.getValue().equals(value)){
+            Node temp = null;
+            if(head.hasNext()){
+                temp = head.getNext();
+                head = temp;
+            }
+            head.setNext(temp);
+            size--;
+            return true;
+        }
+
+        Node next = head;
+        for(int i=0; i<size;i++){
+            if(value.equals(next.getValue())){
+                // save the next node pointer
+                Node temp = null;
+                if(next.hasNext()){
+                    temp = next.getNext();
+                }
+                // find the previous element (i-1)
+                int y = 0;
+                Node temp2 = head;
+                while(y != i-1){
+                    temp2 = temp2.getNext();
+                    y++;
+                }
+
+                // set it's next the saved next
+                temp2.setNext(temp);
+                // decrease the collection's size
+                size--;
+                // return true
+                return true;
+            }
+            next = next.getNext();
+        }
+        return false;
+    }
+
     // REMOVE from the head
+
 
     // SIZE
     public int size(){
