@@ -1,10 +1,10 @@
 package _ArrayList;
 
+import java.util.ArrayList;
+
 public class ArrayListTest {
 
     public static void main(String[] args) {
-
-
 
         _ArrayList list = new _ArrayList();
 

@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64c86a7d-4ddd-48de-b451-13e0c9dc5a16" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/_LinkedList/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_LinkedList/LinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_LinkedList/_LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_LinkedList/_LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ArrayList/ArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ArrayList/ArrayListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_ArrayList/ArrayListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_ArrayList/ArrayListTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/_LinkedList/LinkedListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_LinkedList/LinkedListTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_LinkedList/_LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_LinkedList/_LinkedList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.LinkedListTest">
+  <component name="RunManager" selected="Application.TreeTest">
     <configuration name="ArrayListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_ArrayList.ArrayListTest" />
       <module name="data-structures" />
@@ -63,13 +63,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="data-structures" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,13 +93,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Tree.TreeTest" />
+      <module name="data-structures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreeTest" />
         <item itemvalue="Application.LinkedListTest" />
         <item itemvalue="Application.QueueTest" />
         <item itemvalue="Application.ReverseAStringWithStack" />
         <item itemvalue="Application.ArrayListTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
