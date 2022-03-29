@@ -17,5 +17,8 @@ public class TreeTest {
 
         System.out.println("Pre-order:");
         tree.traversePreOrder(tree.root);
+
+        System.out.println("Post-order:");
+        tree.traversePostOrder(tree.root);
     }
 }

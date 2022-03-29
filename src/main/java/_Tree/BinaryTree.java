@@ -1,5 +1,8 @@
 package _Tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinaryTree {
 
     Node root;
@@ -35,11 +38,38 @@ public class BinaryTree {
         }
     }
 
+
     public void traversePreOrder(Node node){
         if(node !=null){
             System.out.println(" "+ node.value);
             traversePreOrder(node.left);
             traversePreOrder(node.right);
+        }
+    }
+
+    public void traversePostOrder(Node node){
+        if(node !=null){
+            traversePreOrder(node.left);
+            traversePreOrder(node.right);
+            System.out.println(" "+ node.value);
+        }
+    }
+
+    // Breadth-First Search
+    // visits all the nodes of the level before going to the next level
+    public void traverseLevelOrder(){
+        if(root == null){
+            return;
+        }
+
+        Queue<Node> nodes = new LinkedList<>();
+        nodes.add(root);
+
+        while(!nodes.isEmpty()){
+            Node node = nodes.remove();
+
+            System.out.println(" "+ node.value);
+            //if()
         }
     }
 }
