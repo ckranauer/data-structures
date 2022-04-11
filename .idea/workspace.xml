@@ -7,6 +7,12 @@
     <list default="true" id="64c86a7d-4ddd-48de-b451-13e0c9dc5a16" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/_ArrayList/_ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ArrayList/_ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_LinkedList/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_LinkedList/_LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_LinkedList/_LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_ArrayList/_ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_ArrayList/_ArrayList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_LinkedList/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_LinkedList/_LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_LinkedList/_LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/_Tree/TreeSetExercises.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_Tree/TreeSetExercises.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +44,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.TreeSetExercises">
+  <component name="RunManager" selected="Application.LinkedListTest">
     <configuration name="LinkedListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_LinkedList.LinkedListTest" />
       <module name="data-structures" />
@@ -106,9 +112,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LinkedListTest" />
         <item itemvalue="Application.TreeSetExercises" />
         <item itemvalue="Application.TreeTest" />
-        <item itemvalue="Application.LinkedListTest" />
         <item itemvalue="Application.QueueTest" />
         <item itemvalue="Application.ReverseAStringWithStack" />
       </list>

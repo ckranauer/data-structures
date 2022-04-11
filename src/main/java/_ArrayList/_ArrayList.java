@@ -2,15 +2,25 @@ package _ArrayList;
 
 /*
 
+        ADVANTAGES
         - Provide fast access using indexing
         - Memory coherence  // elements stored sequentially in the memory
         - Provides initial size
-        
+
+        DISADVANTAGES
+        - Can be time consuming to add elements in the middle (need to shift the other elements)
+        - Waste space if array is not full
+        - Need to be resized when they reach capacity
+        - Slower when deleting elements from the middle
+
+
 
 
 
 
  */
+
+import java.util.Arrays;
 
 public class _ArrayList<E extends Object> {
 
@@ -130,6 +140,7 @@ public class _ArrayList<E extends Object> {
 
     private Object[] rotateToRight(int index, Object[] arr){
         Object[] temp = new Object[size];
+        temp = Arrays.copyOfRange(arr, index-1,arr.length);
         for(int i=0; i< index;i++){
             temp[i]=arr[i];
         }

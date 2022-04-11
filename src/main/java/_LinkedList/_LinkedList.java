@@ -1,6 +1,60 @@
 package _LinkedList;
 
+    /*
+            ADVANTAGES:
+                - Insertion and deletion operations are easily implemented
+                - Elements are efficiently added or deleted from the middle of the list
+
+            DISADVANTAGES:
+                - Elements in a linked list must be read sequentially
+                - Elements are not stored sequentially in memory
+                - Random access to elements can be inefficient
+                - Slower iterations and extra memory overhead are required // need to store the pointer to the next element
+
+
+     */
+
+
+
 public class _LinkedList<E extends Object> {
+
+    private class Node<E extends Object> {
+
+        private E value;
+        private Node next;
+
+        public Node(){}
+
+        public Node(E value){
+            this.value=value;
+        }
+
+        public void setNext(Node<E> next){
+            this.next = next;
+        }
+
+        public boolean hasNext(){
+            if(this.next != null ){
+                return true;
+            }
+            return false;
+        }
+
+        public Node<E> getNext(){
+            return next;
+        }
+
+        public void setValue(E value){
+            this.value= value;
+        }
+
+        public E getValue(){
+            return value;
+        }
+
+    }
+
+
 
     private Node<E> head;
     private int size;
