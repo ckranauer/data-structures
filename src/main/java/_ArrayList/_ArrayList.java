@@ -1,5 +1,17 @@
 package _ArrayList;
 
+/*
+
+        - Provide fast access using indexing
+        - Memory coherence  // elements stored sequentially in the memory
+        - Provides initial size
+        
+
+
+
+
+ */
+
 public class _ArrayList<E extends Object> {
 
     // ArrayList implemented from array

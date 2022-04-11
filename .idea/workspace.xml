@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64c86a7d-4ddd-48de-b451-13e0c9dc5a16" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_Tree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_Tree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_Tree/Tree.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_Tree/Tree.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/_Tree/TreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_Tree/TreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_Tree/BinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_Tree/BinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/_Tree/TreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_Tree/TreeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_ArrayList/_ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_ArrayList/_ArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
